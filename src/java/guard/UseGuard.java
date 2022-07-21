@@ -14,10 +14,7 @@ import javax.servlet.http.HttpSession;
 import repositories.UserRepository;
 import variables.UserRole;
 
-/**
- *
- * @author kaine
- */
+
 public class UseGuard {
 
     private HttpServletRequest request;
@@ -54,11 +51,11 @@ public class UseGuard {
     public void clearSession() {
 
         HttpSession session = request.getSession();
-//        ArrayList<CartItem> cart = this.holdCart();
+        ArrayList<CartItem> cart = this.holdCart();
 
         session.invalidate();
         session = request.getSession();
-//        session.setAttribute("cart", cart);
+        session.setAttribute("cart", cart);
     }
 
     public boolean useAuth() {

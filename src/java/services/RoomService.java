@@ -15,10 +15,6 @@ import repositories.HistoryRepository;
 import variables.HistoryStatus;
 import variables.RoomStatus;
 
-/**
- *
- * @author Kaine
- */
 public class RoomService {
 
     public static ArrayList<RoomDetail> filterRoomByDateBooking(ArrayList<RoomDetail> roomDetails, Date checkInDate, Date checkOutDate) throws Exception {
@@ -51,6 +47,7 @@ public class RoomService {
         if (minValue != null || maxValue != null) {
             if ((minValue != null && minValue.compareTo(NaN) != 0) && (maxValue != null && maxValue.compareTo(NaN) != 0)) {
                 if (minValue > maxValue) {
+                    roomDetails.clear();
                     return roomDetails;
                 }
 
@@ -70,6 +67,8 @@ public class RoomService {
                         }
                     }
                 }
+            } else {
+                roomDetails.clear();
             }
 
         }

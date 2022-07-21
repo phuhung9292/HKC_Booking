@@ -9,10 +9,7 @@ import entities.CartItem;
 import java.sql.Date;
 import java.util.ArrayList;
 
-/**
- *
- * @author Kaine
- */
+
 public class CartService {
 
     public static boolean isValidDateBooking(ArrayList<CartItem> cartItems, Date inputCheckIn, Date inputCheckOut) {

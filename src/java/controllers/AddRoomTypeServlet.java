@@ -22,10 +22,6 @@ import repositories.RoomTypeRepository;
 import variables.Routers;
 import variables.UserRole;
 
-/**
- *
- * @author Kaine
- */
 @WebServlet(name = "AddRoomTypeServlet", urlPatterns = {"/" + Routers.ADD_ROOM_TYPE_SERVLET})
 public class AddRoomTypeServlet extends HttpServlet {
 

@@ -12,7 +12,6 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-//import java.io.PrintWriter;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -22,10 +21,6 @@ import javax.servlet.http.HttpSession;
 import repositories.UserRepository;
 import variables.Routers;
 
-/**
- *
- * @author ASUS
- */
 @WebServlet(name = "RegisterServlet", urlPatterns = {"/" + Routers.REGISTER_SERVLET})
 public class RegisterServlet extends HttpServlet {
 
